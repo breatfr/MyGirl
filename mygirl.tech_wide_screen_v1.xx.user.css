@@ -1,0 +1,530 @@
+/* ==UserStyle==
+@name           MyGirl: Wide screen + customisations v1.xx
+@description    Put MyGirl on whole page for screen and add customisations features.
+@namespace      userstyles.world/user/breat
+@version        1.00
+@author         BreatFR
+@license        GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
+@preprocessor   stylus
+
+
+@var select     bgchoice                    "Background choice" {
+    "❤️ Hearts": "heartbg",
+    "⬜ None": "nobg",
+    "❔ Custom": "custombg"
+}
+@var text       custombgurl                 "Background URL"                        "URL between quotes"
+
+@var checkbox   bgcolor                     "Background color"                      0
+@var checkbox   bgcolor                     "Background color"                      0
+@var color      bgcolorvalue                "Background color value"                #292b41
+@var checkbox   lisabgcolor                 "Lisa's custom bubble color"            0
+@var color      lisabgcolorvalue            "Lisa's bubble color value"             #211b19
+@var checkbox   ourbgcolor                  "Our custom bubble color"               0
+@var color      ourbgcolorvalue             "Our bubble color value"                #1b1c1e
+@var checkbox   lisatextscolor              "Lisa's font color"                     0
+@var color      lisatextscolorvalue         "Lisa's font color value"               #e591ff
+@var checkbox   ourtextscolor               "Our custom bubble color"               0
+@var checkbox   ourtextscolor               "Our font color"                        0
+@var color      ourtextscolorvalue          "Our font color"                        #cbcbcb
+@var checkbox   blurcontent                 "Blur content in bubbles"               0
+@var text       bubblestext                 "Bubbles font size"                     20px
+@var text       chattextareasize            "Textarea font size"                    20px
+@var checkbox   imageborder                 "Image border on hover"                 1
+==/UserStyle== */
+
+@-moz-document url("https://app.mygirl.tech/#/chat") {
+/* ===================================================================================================================================
+    Chat page
+=================================================================================================================================== */
+    /* Image border on hover */
+    if imageborder {
+        .el-image__preview {
+            width: 215px !important;
+        }
+        .el-image__preview:hover {
+            transition: 0.2s linear;
+            border-radius: 16px;
+        }
+        .el-image:hover {
+            border-radius: 16px;
+            box-shadow: rgba(139, 109, 255, 0.4) -5px -5px 5px 5px, rgba(254, 133, 133, 0.4) 5px 5px 5px 5px, rgba(254, 133, 133, 0.4) 5px -5px 5px 5px, rgba(139, 110, 255, 0.4) -5px 5px 5px 5px;
+            transition: 0.2s linear;
+        }        
+    }
+    
+    /* Image border on hover */
+    if imageborder {
+        .css-1regj17:hover {
+            transition: 0.2s linear;
+        }
+        .css-1regj17:hover {
+            border-radius: 16px;
+            height: 300px;
+            width: 300px;
+        }
+        .css-3vu8ng:hover {
+            border-radius: 16px;
+            box-shadow: rgba(139, 109, 255, 0.4) -5px -5px 5px 5px, rgba(254, 133, 133, 0.4) 5px 5px 5px 5px, rgba(254, 133, 133, 0.4) 5px -5px 5px 5px, rgba(139, 110, 255, 0.4) -5px 5px 5px 5px;
+            transition: 0.2s linear;
+        }        
+    }    
+    
+    /* Background */
+    if (bgchoice=="heartbg") {
+        .messages__box {
+            background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolorvalue fixed 100% !important;
+        }
+    }    
+    if (bgchoice=="nobg") {
+        /* No background */
+        .messages__box {
+            background: bgcolorvalue;
+        }
+    }    
+    if (bgchoice=="custombg") {
+        /* Custom background */
+        .messages__box {
+            background: url(custombgurl) bgcolorvalue fixed 100% !important;
+        }
+    }
+    if bgcolor {
+        .character-home,
+        .chat__message-box,
+        .sidebar {
+            background-color: bgcolorvalue !important;
+        }
+    }
+    
+    if blurcontent {
+        .message__item,
+        .message__item--img {
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+    }
+       
+    /* Header */
+    .sidebar {
+        max-height: 60px;
+        left: 0px;
+        top: 0px;
+        z-index: 9999;
+    }
+    .sidebar[data-v-e3b8cdb9] {
+        height: 60px;
+        width: 30.45%;
+    }
+    .sidebar > figure > img {
+        left: 10px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        margin-inline-end: 0px;
+        margin-inline-start: 0px;
+        max-height: 50px;
+        max-width: 50px;
+        position: absolute;
+        top: 10px;
+    }
+    .sidebar__item.logout svg use {
+        stroke: var(--el-color-danger);
+    }
+    .sidebar__item.download,
+    .sidebar__item.setting > span,
+    .sidebar__item.logout {
+        display: none;
+    }
+    .sidebar__item.download > svg,
+    .sidebar__item.setting > svg,
+    .sidebar__item.logout > svg {
+        height: 40px;
+        width: 40px;
+    }
+    .sidebar > figure > figcaption {
+        display: none;
+    }
+    .sidebar__footer {
+        display: flex !important;
+        column-gap: 20px;
+        left: 15%;
+        top: 20%;
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+    }
+    
+    .setting-btn-layout {
+        column-gap: 20px;
+        display: flex !important;
+        left: 25% !important;
+        position: absolute;
+        top: -6.5% !important;
+        z-index: 9999;
+    }
+    .setting-btn-layout > button,
+    .setting-btn-layout > button:hover {
+        background-color: transparent;
+        border: none;
+    }
+    .setting:hover::after {
+        background: linear-gradient(90deg,#6a8bff 0%,#e591ff 100%);
+        border-radius: 5px;
+        color: white;
+        content: "Settings";        
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        left: -3%;
+        padding: 5px;
+        position: absolute;
+        top: 100%;
+    }
+    .character-home.chat__main > div > button:nth-child(1):hover::after {
+        background: linear-gradient(90deg,#6a8bff 0%,#e591ff 100%);
+        border-radius: 5px;
+        color: white;
+        content: "Gift Shop";
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        left: -18%;
+        padding: 5px;
+        position: absolute;
+        top: 100%;
+    }
+    .character-home.chat__main > div > button:nth-child(2) > span > svg {
+        padding-top: 5px !important;
+    }
+    .character-home.chat__main > div > button:nth-child(2):hover::after {
+        background: linear-gradient(90deg,#6a8bff 0%,#e591ff 100%);
+        border-radius: 5px;
+        color: white;
+        content: "Avatar & Outfit";
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        left: 27%;
+        padding: 5px;
+        position: absolute;
+        top: 100%;
+    }
+    .setting-btn {
+        height: 40px !important;
+        width: 40px !important;
+    }
+    .character-home.chat__main > div > button:nth-child(1) > span > svg {
+        height: 40px !important;
+        width: 40px !important;
+    }
+    .character-home.chat__main > div > button:nth-child(2) > span > svg {
+        height: 80px !important;
+        width: 80px !important;
+    }
+    
+    /* Chat */
+    .chat__container {
+        grid-template-columns: 30% 70% !important;
+        left: 0px;
+        position: absolute;
+        width: calc(100% + 30px);
+    }
+    .chat__message-box {
+        bottom: 0px;
+        height: 100%;
+        padding: 0px 0px 10px 0px !important;
+        position: fixed;
+        top: 0px;        
+    }
+    /* Avatar */
+    .character-home {
+        background-color: #292b41;
+        margin-top: 72px;
+    }
+    
+    /* Chat */
+    if bubblescolor {
+        .message__item {
+            color: bubblescolor !important;
+        }
+    }
+    if bubblestext {
+        .message__item {
+            font-size: bubblestext !important;
+        }
+    } 
+    if chattextareasize {
+        input {
+            font-size: chattextareasize !important;
+        }
+    }
+    
+    .messages__box {
+        margin-bottom: 20px !important;
+        padding: 0px 40px 0px 40px !important;
+        z-index: 9999;
+    }
+        
+    /* Topic */
+    .topic {
+        font-size: 14px !important;
+    }
+    
+    /* Textarea */
+    .el-input__wrapper {
+        border-radius: 30px;
+    }
+    .el-input__wrapper.is-focus {
+        border-radius: 30px;
+        box-shadow: 0 0 0 1px var(--el-input-focus-border) !important;
+    }
+    
+    /* Bubbles size */
+    .messages__box {
+        width: 100%;
+    }
+    .message-item__wrapper {
+        display: flex !important;
+        align-self: start !important;
+        -webkit-box-pack: start !important;
+        justify-content: start !important;
+        height: fit-content !important;
+    }
+    .message__item {
+        border-radius: 8px 20px 20px 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        max-width: 80% !important;
+    }
+    .message-item__wrapper-is-me {
+        align-self: end !important;
+        display: flex !important;
+        height: fit-content !important;
+        justify-content: end !important;
+        -webkit-box-pack: end !important;
+    }
+    .message__item-is-me {
+        border-radius: 20px 8px 20px 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        max-width: 80% !important;
+    }
+    
+    if lisabgcolor {
+        .message__item {
+            background: lisabgcolorvalue !important;
+            border-radius: 8px 20px 20px 20px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            max-width: 80% !important;
+        }        
+    }
+    if ourbgcolor {
+        .message__item-is-me {
+            background: ourbgcolorvalue !important;
+            border-radius: 20px 8px 20px 20px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            max-width: 80% !important;
+        }        
+    }
+    
+    if lisatextscolor {
+        .message__item {
+            color: lisatextscolorvalue !important;
+        }
+    }
+
+    if ourtextscolor {
+        .message__item-is-me {
+            color: ourtextscolorvalue !important;
+        }
+    }
+    
+    /* No more border around images in chat */
+    .el-image > img {
+        border: none !important;
+    }
+    
+    /* 1 time offer */
+    .one-time-offer__body {
+        top: -40px !important;
+        margin-bottom: -25px;
+    }
+    .el-overlay-dialog,
+    .el-dialog.coin-paywall {
+        height: 900px !important;
+        overflow: hidden !important;
+    }
+    .coin-package-list {
+        padding-top: 30px !important;
+    }
+    
+    .gift__price {
+        background: rgba(106,139,255,.8) !important;
+        height: 24px !important;
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        justify-self: center !important;
+        line-height: 24px !important;
+        padding: 10px 20px 10px 20px !important;
+        text-align: center !important;
+        width: fit-content !important;
+    }
+    
+    /* Hide scrollbars */
+    :root ::-webkit-scrollbar {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+        width: 0px;
+    }    
+    ::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+    }
+}
+@-moz-document url("https://app.mygirl.tech/#/setting") {
+/* ===================================================================================================================================
+    Settings page
+=================================================================================================================================== */
+    /* Theme version */
+    :root {
+        --version: 'Theme "MyGirl: Wide screen" by BreatFR version 1.00';
+    }
+    .sidebar {
+        &::after {
+            background: -webkit-linear-gradient(88.55deg, rgb(139, 109, 255) 22.43%, rgb(254, 132, 132) 92.28%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            content: var(--version);
+            font-size: 20px !important;
+            position: absolute;
+            top: 800px;
+            left: 20px;
+            width: max-content;
+        }
+    }
+    
+    if blurcontent {
+        #el-id-31-70,
+        #el-id-31-71,
+        #el-id-31-72,
+        #el-id-31-73 {
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+    }
+    
+    /* Header */
+    .sidebar {
+        background: rgb(31, 30, 46) !important;
+        max-height: 60px;
+        left: 0px;
+        top: 0px;
+        z-index: 9999;
+    }
+    .sidebar[data-v-e3b8cdb9] {
+        height: 60px;
+        width: 31%;
+    }
+    .sidebar > figure > img {
+        left: 10px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        margin-inline-end: 0px;
+        margin-inline-start: 0px;
+        max-height: 50px;
+        max-width: 50px;
+        position: absolute;
+        top: 10px;
+    }
+    .download:hover::after {
+        background: linear-gradient(90deg,#6a8bff 0%,#e591ff 100%);
+        border-radius: 5px;
+        color: white;
+        content: "Download app";
+        font-size: 16px;
+        left: -7%;
+        padding: 5px;
+        position: absolute;
+        top: 100%;
+    }
+    .setting:hover::after {
+        background: linear-gradient(90deg,#6a8bff 0%,#e591ff 100%);
+        border-radius: 5px;
+        color: white;
+        content: "Settings";
+        font-size: 16px;
+        left: 11%;
+        padding: 5px;
+        position: absolute;
+        top: 100%;
+    }
+    .logout:hover::after {
+        background: linear-gradient(90deg,#6a8bff 0%,#e591ff 100%);
+        border-radius: 5px;
+        color: white;
+        content: "Logout";
+        font-size: 16px;
+        left: 24%;
+        padding: 5px;
+        position: absolute;
+        top: 100%;
+    }
+    .sidebar__item.logout {
+        margin-top: -5px !important;
+    }
+    .sidebar__item.logout svg use {
+        stroke: var(--el-color-danger);
+    }
+    .sidebar__item.download > span,
+    .sidebar__item.setting > span,
+    .sidebar__item.logout > span {
+        display: none;
+    }
+    .sidebar__item.download > svg,
+    .sidebar__item.setting > svg,
+    .sidebar__item.logout > svg {
+        height: 40px;
+        width: 40px;
+    }
+    .sidebar > figure > figcaption {
+        display: none;
+    }
+    .sidebar__footer {
+        display: flex !important;
+        gap: 20px;
+        left: 13%;
+        top: 20%;
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+    }
+    
+    /* Settings */
+    .setting__container {
+        left: 0px;
+        position: absolute;
+        padding-top: 72px !important;
+    }
+    .setting__container > div:nth-child(3) {
+        position: absolute;
+        right: 50%;
+        top: 11.5%;
+    }
+}
+@-moz-document url("chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/popup.html") {
+/* ===================================================================================================================================
+    Stylus options
+=================================================================================================================================== */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: grey;
+        border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: white; 
+    }
+}
