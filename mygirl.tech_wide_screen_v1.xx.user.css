@@ -5,8 +5,8 @@
 @version        1.00
 @author         BreatFR
 @license        GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
+@updateURL      https://raw.githubusercontent.com/breatfr/MyGirl/master/mygirl.tech_wide_screen_v1.xx.user.css
 @preprocessor   stylus
-
 
 @var select     bgchoice                    "Background choice" {
     "❤️ Hearts": "heartbg",
