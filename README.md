@@ -4,10 +4,10 @@ Put [MyGirl](https://app.mygirl.tech/) on whole page for screen and add customis
 ![Preview](https://raw.githubusercontent.com/breatfr/MyGirl/main/preview%20v1.xx.jpg)
 
 Changelog
-- (coming soon)
+- https://raw.githubusercontent.com/breatfr/MyGirl/main/changelog.txt
 
 Help / comment / ask etc...
-- (coming soon)
+- https://discord.com/channels/1172088835358863410/1172482585918709840
 
 ## Customisations available
 # chat page
