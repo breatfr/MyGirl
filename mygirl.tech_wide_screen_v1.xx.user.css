@@ -5,6 +5,8 @@
 @version        1.00
 @author         BreatFR
 @license        GNU GPL v3 (https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
+@homepageURL    https://github.com/breatfr/MyGirl
+@supportURL     https://discord.com/channels/1172088835358863410/1172482585918709840
 @updateURL      https://raw.githubusercontent.com/breatfr/MyGirl/master/mygirl.tech_wide_screen_v1.xx.user.css
 @preprocessor   stylus
 
@@ -33,6 +35,14 @@
 @var checkbox   imageborder                 "Image border on hover"                 1
 ==/UserStyle== */
 
+/* === Credits ===
+Website         https://breat.fr
+facebook        https://www.facebook.com/breatfroff
+mastodon        https://mastodon.social/@breat_fr
+telegram        https://t.me/+5ZLC2qntf6xmYmI0
+vk              https://vk.com/breatfroff
+X (twitter)     https://x.com/breatfroff
+=== Credits === */
 @-moz-document url("https://app.mygirl.tech/#/chat") {
 /* ===================================================================================================================================
     Chat page
