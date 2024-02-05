@@ -402,10 +402,7 @@
     }
     
     if blurcontent {
-        #el-id-31-70,
-        #el-id-31-71,
-        #el-id-31-72,
-        #el-id-31-73 {
+        input {
             filter: blur(8px);
             -webkit-filter: blur(8px);
         }
