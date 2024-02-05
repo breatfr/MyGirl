@@ -72,24 +72,28 @@
     
     /* Background */
     if (bgchoice=="heartbg") {
+        .chat__container,
         .messages__box {
             background: url(https://i.ibb.co/fYQkYyc/heart-pattern.png) bgcolorvalue fixed 100% !important;
         }
     }    
     if (bgchoice=="nobg") {
         /* No background */
+        .chat__container,
         .messages__box {
             background: bgcolorvalue;
         }
     }    
     if (bgchoice=="custombg") {
         /* Custom background */
+        .chat__container,
         .messages__box {
             background: url(custombgurl) bgcolorvalue fixed 100% !important;
         }
     }
     if bgcolor {
         .character-home,
+        .chat__container,
         .chat__message-box,
         .sidebar {
             background-color: bgcolorvalue !important;
