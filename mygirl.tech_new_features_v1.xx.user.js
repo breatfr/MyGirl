@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         MyGirl - New features
-// @namespace
+// @description  New features for MyGirl
+// @namespace    https://app.mygirl.tech/*
 // @version      1.00
 // @author       BreatFR
-// @description  @description New features for MyGirl
 // @match        https://app.mygirl.tech/*
 // @icon         https://app.mygirl.tech/images/logo.png
+// @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
 // ==/UserScript==
 
 (function() {
