@@ -1,4 +1,4 @@
-# MyGirl : Wide screen + customisations v1
+# MyGirl : Wide screen + customisations v1 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr)
 Put [MyGirl](https://app.mygirl.tech/) on whole page for screen and add customisations features.
 ## Preview
 ![Preview](https://raw.githubusercontent.com/breatfr/MyGirl/main/preview%20v1.xx.jpg)
@@ -82,5 +82,3 @@ PS2: Like i put on GitHub only I don't know if automatic update from stylus will
 2. Go on [My Girl : New features](https://raw.githubusercontent.com/breatfr/kindroid/master/mygirl.tech_new_features_v1.xx.user.js) website and click on `Install` on left.
 
 3. Enjoy :)
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr)
