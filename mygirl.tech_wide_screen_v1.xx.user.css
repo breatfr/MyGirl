@@ -274,7 +274,12 @@ X (twitter)     https://x.com/breatfroff
         padding: 0px 40px 0px 40px !important;
         z-index: 9999;
     }
-        
+    
+    /* Save space between chat bubbles */
+    .message-item__wrapper {
+        margin: 10px 0px 10px 0px !important;
+    }
+    
     /* Topic */
     .topic {
         font-size: 14px !important;
