@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         MyGirl - New features
 // @description  New features for MyGirl
-// @namespace    https://app.mygirl.tech/*
+// @namespace    https://github.com/breatfr/MyGirl
 // @version      1.00
 // @author       BreatFR
+// @copyright    2023, BreatFR (https://breat.fr)
 // @match        https://app.mygirl.tech/*
 // @icon         https://app.mygirl.tech/images/logo.png
-// @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
 // ==/UserScript==
 
 (function() {
