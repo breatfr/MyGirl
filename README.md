@@ -4,7 +4,7 @@ Put [MyGirl](https://app.mygirl.tech/) on whole page for screen and add customis
 ![Preview](https://raw.githubusercontent.com/breatfr/MyGirl/main/preview%20v1.xx.jpg)
 
 Changelog
-- https://raw.githubusercontent.com/breatfr/MyGirl/main/changelog.txt
+- https://github.com/breatfr/MyGirl/blob/main/CHANGELOG
 
 Help / comment / ask etc...
 - https://discord.com/channels/1172088835358863410/1172482585918709840
