@@ -1,1 +1,1 @@
-# :warning: Project moved on GitLab: https://gitlab.com/breatfr/MyGirl :warning:
+# :warning: Project moved on GitLab: https://gitlab.com/breatfr/mygirl :warning:
