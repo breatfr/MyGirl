@@ -1,4 +1,5 @@
 # <img src="https://mygirl.tech/assets/my-girl-logo-31aaf4a2.png" alt="MyGirl" height="30px"> MyGirl : Wide screen + customisations v1 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr) <a href="https://www.paypal.me/breat"><img src="https://github.com/andreostrovsky/donate-with-paypal/raw/master/blue.svg" alt="PayPal" height="30"></a>
+# :warning: Project moved on GitLab: https://gitlab.com/breatfr/MyGirl :warning:
 Put [MyGirl](https://app.mygirl.tech/) on whole page for screen and add customisations features.
 ## Preview
 ![Preview](https://raw.githubusercontent.com/breatfr/MyGirl/main/preview%20v1.xx.jpg)
